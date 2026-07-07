@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamilaruvi.S — AI & Data Science Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="grain"></div>
+
+<nav id="navbar" class="glass">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">TS<span class="dot">.</span></a>
+    <button id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#education" data-nav>Education</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#internship" data-nav>Internships</a></li>
+      <li><a href="#certifications" data-nav>Certifications</a></li>
+      <li><a href="#contact" data-nav class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow mono reveal">AI &amp; Data Science Student</p>
+        <h1 class="reveal">
+          Hi, I'm <span class="grad-text">Tamilaruvi.S</span>
+        </h1>
+        <p class="hero-role mono reveal">
+          <span id="typed"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-summary reveal">
+          Dedicated and detail-oriented Artificial Intelligence and Data Science student
+          with a foundation in Python, Data Analytics, Web Development, GitHub, and
+          Machine Learning concepts — building real projects to solve real problems.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-avatar reveal">
+        <div class="avatar-ring">
+          <div class="avatar-disc mono">TS</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">About</p>
+      <h2>A quick introduction</h2>
+    </div>
+    <div class="about-grid">
+      <div class="glass card about-summary reveal">
+        <p>
+          I'm an Artificial Intelligence and Data Science undergraduate at
+          St. Joseph's College of Engineering and Technology, driven by
+          curiosity about how data and machine learning can solve real-world
+          problems. I've built projects spanning computer vision, AI-assisted
+          tools, dashboards, and network security — and I'm actively looking
+          for opportunities to grow as an engineer.
+        </p>
+        <div class="achievement mono">
+          🏆 1st Prize — Sign Language Recognition Project Competition (₹1000 Cash Prize)
+        </div>
+      </div>
+      <div class="about-facts reveal">
+        <div class="glass fact-card">
+          <span class="fact-number mono">8.01</span>
+          <span class="fact-label">CGPA</span>
+        </div>
+        <div class="glass fact-card">
+          <span class="fact-number mono">4+</span>
+          <span class="fact-label">Internships</span>
+        </div>
+        <div class="glass fact-card">
+          <span class="fact-number mono">4+</span>
+          <span class="fact-label">Certifications</span>
+        </div>
+        <div class="glass fact-card">
+          <span class="fact-number mono">4</span>
+          <span class="fact-label">Projects Built</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Education</p>
+      <h2>Academic timeline</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass card timeline-card">
+          <span class="timeline-date mono">2023 — 2027</span>
+          <h3>B.Tech, Artificial Intelligence &amp; Data Science <span class="tag-pill">Pursuing</span></h3>
+          <p>St. Joseph's College of Engineering and Technology</p>
+          <p class="mono meta">CGPA: 8.01</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass card timeline-card">
+          <span class="timeline-date mono">Mar 2021 — Mar 2023</span>
+          <h3>Higher Secondary Education (12th Standard)</h3>
+          <p class="mono meta">Percentage: 73%</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass card timeline-card">
+          <span class="timeline-date mono">SSLC</span>
+          <h3>10th Standard</h3>
+          <p class="mono meta">Completed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Skills</p>
+      <h2>Technical toolkit</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-chip glass">Python</div>
+      <div class="skill-chip glass">Web Development</div>
+      <div class="skill-chip glass">Artificial Intelligence &amp; Machine Learning</div>
+      <div class="skill-chip glass">Data Analytics</div>
+      <div class="skill-chip glass">Git &amp; GitHub</div>
+      <div class="skill-chip glass">Microsoft Excel</div>
+      <div class="skill-chip glass">Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Projects</p>
+      <h2>Things I've built</h2>
+    </div>
+    <div class="projects-grid">
+      <article class="glass card project-card reveal">
+        <h3>Sign Language Recognition System</h3>
+        <p>A Python-based system that recognizes sign language gestures — awarded 1st prize in a project competition.</p>
+        <span class="tag-pill mono">Python · Computer Vision</span>
+      </article>
+      <article class="glass card project-card reveal">
+        <h3>AI Mock Interview Agent</h3>
+        <p>An AI-powered interview practice platform to help candidates rehearse and improve their interview performance.</p>
+        <span class="tag-pill mono">AI · NLP</span>
+      </article>
+      <article class="glass card project-card reveal">
+        <h3>NeuraRuvi</h3>
+        <p>A student management dashboard for organizing and tracking academic information efficiently.</p>
+        <span class="tag-pill mono">Web Development</span>
+      </article>
+      <article class="glass card project-card reveal">
+        <h3>Web Resume Builder &amp; Network Port Scanner</h3>
+        <p>A tool that builds resumes on the web and identifies open ports to analyze network connectivity.</p>
+        <span class="tag-pill mono">Web · Networking</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Experience</p>
+      <h2>Internships</h2>
+    </div>
+    <div class="internship-grid">
+      <div class="glass card internship-card reveal">
+        <h3>Cybersecurity</h3>
+        <p class="mono meta">VOIS &amp; AICTE</p>
+      </div>
+      <div class="glass card internship-card reveal">
+        <h3>AI &amp; ML</h3>
+        <p class="mono meta">Kodacy &amp; AICTE</p>
+      </div>
+      <div class="glass card internship-card reveal">
+        <h3>Web Development &amp; Ethical Hacking</h3>
+        <p class="mono meta">Thamizhan Skills</p>
+      </div>
+      <div class="glass card internship-card reveal">
+        <h3>Artificial Intelligence</h3>
+        <p class="mono meta">IBM SkillsBuild</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Credentials</p>
+      <h2>Certifications</h2>
+    </div>
+    <div class="cert-list">
+      <div class="glass card cert-card reveal">
+        <h3>Data Analytics with Python</h3>
+        <p class="mono meta">NPTEL</p>
+      </div>
+      <div class="glass card cert-card reveal">
+        <h3>Big Data 101 &amp; Big Data 102</h3>
+        <p class="mono meta">Infosys Springboard</p>
+      </div>
+      <div class="glass card cert-card reveal">
+        <h3>Data Analytics</h3>
+        <p class="mono meta">Deloitte</p>
+      </div>
+      <div class="glass card cert-card reveal">
+        <h3>Green Skills and Artificial Intelligence</h3>
+        <p class="mono meta">Edunet Foundation &amp; AICTE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-head reveal">
+      <p class="eyebrow mono">Contact</p>
+      <h2>Let's build something together</h2>
+    </div>
+    <div class="glass card contact-card reveal">
+      <p class="contact-lead">
+        Open to opportunities, collaborations, and interesting conversations
+        about AI and data. Reach out through any of the channels below.
+      </p>
+      <div class="contact-links">
+        <a href="tel:8838213528" class="contact-link glass">
+          <span class="contact-icon">📞</span>
+          <span>8838213528</span>
+        </a>
+        <a href="mailto:tamilaruvi485@gmail.com" class="contact-link glass">
+          <span class="contact-icon">✉️</span>
+          <span>tamilaruvi485@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/tamilaruvi-s-85baa0306" target="_blank" rel="noopener" class="contact-link glass">
+          <span class="contact-icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="contact-link glass">
+          <span class="contact-icon">💻</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Tamilaruvi.S — Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
