@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamilaruvi S — AI & Data Science Student, Python Developer, and Machine Learning Enthusiast. Premium portfolio showcasing projects, skills, and achievements.">
+  <meta name="author" content="Tamilaruvi S">
+  <title>Tamilaruvi S | AI & Data Science Portfolio</title>
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring--2"></div>
+      <div class="loader-ring loader-ring--3"></div>
+      <p class="loader-text">Tamilaruvi<span class="loader-dot">.</span></p>
+      <div class="loader-bar"><span class="loader-progress"></span></div>
+    </div>
+  </div>
+
+  <!-- ==================== CURSOR GLOW ==================== -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ==================== PARTICLE CANVAS ==================== -->
+  <canvas id="particles" class="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== AURORA BACKGROUND ==================== -->
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora__blob aurora__blob--1"></div>
+    <div class="aurora__blob aurora__blob--2"></div>
+    <div class="aurora__blob aurora__blob--3"></div>
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>Tamilaruvi<span class="nav__logo-accent">.S</span><span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#internships" class="nav__link">Internships</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero__content container">
+        <!-- Profile Photo — Center Attraction -->
+        <div class="hero__visual" data-parallax="0.15">
+          <div class="hero__glow"></div>
+          <div class="hero__ring hero__ring--1"></div>
+          <div class="hero__ring hero__ring--2"></div>
+          <div class="hero__ring hero__ring--3"></div>
+          <div class="hero__photo-wrap">
+            <!-- EDIT: Replace assets/profile.png with your photo -->
+            <img src="assets/profile.png" alt="Tamilaruvi S — Professional Portrait" class="hero__photo" width="320" height="320">
+          </div>
+        </div>
+
+        <div class="hero__text">
+          <p class="hero__greeting reveal">Hello, I'm</p>
+          <h1 class="hero__name reveal">
+            <span class="hero__name-text" data-text="Tamilaruvi S">Tamilaruvi S</span>
+          </h1>
+          <div class="hero__typing reveal">
+            <span class="hero__typing-label">I'm a</span>
+            <span id="typing-text" class="hero__typing-text"></span>
+            <span class="hero__typing-cursor">|</span>
+          </div>
+          <p class="hero__tagline reveal">
+            Building intelligent applications &amp; solving real-world problems with AI, Python &amp; Data Science.
+          </p>
+          <div class="hero__buttons reveal">
+            <a href="#projects" class="btn btn--primary">
+              <span>View Projects</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <!-- EDIT: Replace assets/resume.png with your PDF resume (rename to resume.pdf and update href) -->
+            <a href="assets/resume.png" download="Tamilaruvi_S_Resume.png" class="btn btn--secondary">
+              <span>Download Resume</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">About Me</span>
+          <h2 class="section__title">Crafting Intelligence<br><span class="gradient-text">Through Code</span></h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="glass-card about__card reveal" data-tilt>
+            <div class="about__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              Dedicated and detail-oriented Artificial Intelligence and Data Science student with a foundation in Python, Data Analytics, Web Development, and Machine Learning concepts.
+            </p>
+          </div>
+
+          <div class="glass-card about__card reveal" data-tilt>
+            <div class="about__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3>Passion for AI</h3>
+            <p>
+              I love building intelligent applications that make a difference. From sign language recognition to AI-powered interview agents — I thrive on turning complex problems into elegant solutions.
+            </p>
+          </div>
+
+          <div class="glass-card about__card reveal" data-tilt>
+            <div class="about__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3>What Drives Me</h3>
+            <p>
+              Solving real-world problems through technology. I'm constantly learning, building, and pushing boundaries — seeking opportunities to expand my technical expertise in a professional environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Summary Card -->
+        <div class="glass-card about__summary reveal">
+          <div class="about__summary-content">
+            <span class="about__summary-badge">Currently Pursuing</span>
+            <h3>B.Tech in Artificial Intelligence &amp; Data Science</h3>
+            <p class="about__summary-school">St. Joseph's College of Engineering and Technology</p>
+            <div class="about__summary-meta">
+              <span>2023 – 2027</span>
+              <span class="about__summary-dot">•</span>
+              <span>CGPA: <strong>8.01</strong></span>
+            </div>
+          </div>
+          <div class="about__summary-visual">
+            <div class="about__summary-ring"></div>
+            <span class="about__summary-cgpa">8.01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Education</span>
+          <h2 class="section__title">My Academic<br><span class="gradient-text">Journey</span></h2>
+        </div>
+
+        <div class="timeline">
+          <!-- EDIT: Update education details here -->
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+            </div>
+            <div class="glass-card timeline__card" data-tilt>
+              <span class="timeline__year">2023 – 2027</span>
+              <h3>B.Tech — Artificial Intelligence &amp; Data Science</h3>
+              <p class="timeline__institution">St. Joseph's College of Engineering and Technology</p>
+              <span class="timeline__badge">CGPA: 8.01</span>
+              <p class="timeline__status">Currently Pursuing</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+            </div>
+            <div class="glass-card timeline__card" data-tilt>
+              <span class="timeline__year">Mar 2021 – Mar 2023</span>
+              <h3>Higher Secondary Education (12th Standard)</h3>
+              <p class="timeline__institution">Higher Secondary School</p>
+              <span class="timeline__badge">73%</span>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+            </div>
+            <div class="glass-card timeline__card" data-tilt>
+              <span class="timeline__year">Completed</span>
+              <h3>SSLC (10th Standard)</h3>
+              <p class="timeline__institution">Secondary School Education</p>
+              <span class="timeline__badge timeline__badge--success">Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Technical<br><span class="gradient-text">Arsenal</span></h2>
+        </div>
+
+        <!-- Skill Categories -->
+        <div class="skills__categories">
+          <!-- Programming -->
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Programming
+            </h3>
+            <div class="skills__grid">
+              <div class="skill-card" data-skill="92"><span class="skill-card__name">Python</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="75"><span class="skill-card__name">C</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="78"><span class="skill-card__name">Java</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="88"><span class="skill-card__name">HTML</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="85"><span class="skill-card__name">CSS</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="82"><span class="skill-card__name">JavaScript</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="80"><span class="skill-card__name">SQL</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              Tools &amp; Version Control
+            </h3>
+            <div class="skills__grid">
+              <div class="skill-card" data-skill="90"><span class="skill-card__name">Git</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="88"><span class="skill-card__name">GitHub</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v1a3 3 0 01-3 3h-1v1a4 4 0 01-8 0v-1H7a3 3 0 01-3-3v-1a3 3 0 013-3h1V6a4 4 0 014-4z"/></svg>
+              AI &amp; Machine Learning
+            </h3>
+            <div class="skills__grid">
+              <div class="skill-card" data-skill="85"><span class="skill-card__name">Machine Learning</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="88"><span class="skill-card__name">Artificial Intelligence</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- Data -->
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              Data &amp; Analytics
+            </h3>
+            <div class="skills__grid">
+              <div class="skill-card" data-skill="86"><span class="skill-card__name">Data Analytics</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="80"><span class="skill-card__name">Power BI</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+              <div class="skill-card" data-skill="85"><span class="skill-card__name">Excel</span><div class="skill-card__bar"><div class="skill-card__fill"></div></div></div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              Soft Skills
+            </h3>
+            <div class="skills__grid skills__grid--tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Teamwork</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Projects</span>
+          <h2 class="section__title">Featured<br><span class="gradient-text">Work</span></h2>
+        </div>
+
+        <div class="projects__grid">
+          <!-- EDIT: Update project links, descriptions, and images -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </div>
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Sign Language Recognition</h3>
+              <p>Python-based sign language recognition system using computer vision and machine learning to translate hand gestures into text in real-time.</p>
+              <div class="project-card__tech">
+                <span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>ML</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="project-card__btn">GitHub</a>
+                <a href="#" class="project-card__btn project-card__btn--live">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--2">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3"/></svg>
+              </div>
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>AI Mock Interview Agent</h3>
+              <p>AI-powered interview practice platform that simulates real interview scenarios, provides intelligent feedback, and helps students prepare confidently.</p>
+              <div class="project-card__tech">
+                <span>Python</span><span>AI</span><span>NLP</span><span>Flask</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="project-card__btn">GitHub</a>
+                <a href="#" class="project-card__btn project-card__btn--live">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--3">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>NeuraRuvi</h3>
+              <p>A comprehensive Student Management Dashboard with intuitive UI for managing academic records, attendance, and performance analytics.</p>
+              <div class="project-card__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="project-card__btn">GitHub</a>
+                <a href="#" class="project-card__btn project-card__btn--live">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--4">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Web Resume Builder</h3>
+              <p>Dynamic web-based resume builder that allows users to create, customize, and export professional resumes with modern templates.</p>
+              <div class="project-card__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="project-card__btn">GitHub</a>
+                <a href="#" class="project-card__btn project-card__btn--live">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tilt>
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--5">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </div>
+              <div class="project-card__overlay"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Network Port Scanner</h3>
+              <p>Security tool to identify open ports and analyze network connectivity, helping detect vulnerabilities and monitor network services.</p>
+              <div class="project-card__tech">
+                <span>Python</span><span>Networking</span><span>Security</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="project-card__btn">GitHub</a>
+                <a href="#" class="project-card__btn project-card__btn--live">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERNSHIPS SECTION ==================== -->
+    <section class="section internships" id="internships">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Experience</span>
+          <h2 class="section__title">Internships &amp;<br><span class="gradient-text">Training</span></h2>
+        </div>
+
+        <div class="internships__grid">
+          <div class="glass-card internship-card reveal float" data-tilt>
+            <div class="internship-card__icon internship-card__icon--1">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p class="internship-card__org">VOIS &amp; AICTE</p>
+            <p class="internship-card__desc">Hands-on training in cybersecurity fundamentals, threat analysis, and security best practices.</p>
+          </div>
+
+          <div class="glass-card internship-card reveal float float--delay" data-tilt>
+            <div class="internship-card__icon internship-card__icon--2">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v1a3 3 0 01-3 3h-1v1a4 4 0 01-8 0v-1H7a3 3 0 01-3-3v-1a3 3 0 013-3h1V6a4 4 0 014-4z"/></svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p class="internship-card__org">Kodacy &amp; AICTE</p>
+            <p class="internship-card__desc">Deep dive into AI/ML algorithms, model training, and real-world application development.</p>
+          </div>
+
+          <div class="glass-card internship-card reveal float float--delay-2" data-tilt>
+            <div class="internship-card__icon internship-card__icon--3">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <h3>Artificial Intelligence</h3>
+            <p class="internship-card__org">IBM SkillsBuild</p>
+            <p class="internship-card__desc">Enterprise-grade AI training covering cognitive computing, Watson, and AI ethics.</p>
+          </div>
+
+          <div class="glass-card internship-card reveal float float--delay-3" data-tilt>
+            <div class="internship-card__icon internship-card__icon--4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Web Dev &amp; Ethical Hacking</h3>
+            <p class="internship-card__org">Thamizhan Skills</p>
+            <p class="internship-card__desc">Full-stack web development combined with ethical hacking and penetration testing skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Certifications</span>
+          <h2 class="section__title">Verified<br><span class="gradient-text">Credentials</span></h2>
+        </div>
+
+        <div class="certifications__grid">
+          <div class="glass-card cert-card reveal" data-tilt>
+            <div class="cert-card__badge">NPTEL</div>
+            <h3>Data Analytics with Python</h3>
+            <p>National Programme on Technology Enhanced Learning — comprehensive data analytics certification.</p>
+            <div class="cert-card__shine"></div>
+          </div>
+
+          <div class="glass-card cert-card reveal" data-tilt>
+            <div class="cert-card__badge">Infosys Springboard</div>
+            <h3>Big Data 101 &amp; Big Data 102</h3>
+            <p>Foundational and advanced big data concepts, Hadoop ecosystem, and data processing frameworks.</p>
+            <div class="cert-card__shine"></div>
+          </div>
+
+          <div class="glass-card cert-card reveal" data-tilt>
+            <div class="cert-card__badge">Deloitte</div>
+            <h3>Data Analytics</h3>
+            <p>Professional data analytics certification covering business intelligence and data-driven decision making.</p>
+            <div class="cert-card__shine"></div>
+          </div>
+
+          <div class="glass-card cert-card reveal" data-tilt>
+            <div class="cert-card__badge">Edunet Foundation</div>
+            <h3>Green Skills &amp; Artificial Intelligence</h3>
+            <p>AICTE-backed program combining sustainability skills with artificial intelligence fundamentals.</p>
+            <div class="cert-card__shine"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Achievements</span>
+          <h2 class="section__title">Recognition &amp;<br><span class="gradient-text">Awards</span></h2>
+        </div>
+
+        <div class="achievements__showcase reveal">
+          <div class="achievement-card glass-card" data-tilt>
+            <div class="achievement-card__trophy">🏆</div>
+            <div class="achievement-card__content">
+              <span class="achievement-card__label">First Prize</span>
+              <h3>Sign Language Recognition Project</h3>
+              <p>Secured First Prize in Sign Language Recognition Project Competition for innovative use of computer vision and ML.</p>
+              <div class="achievement-card__prize">
+                <span class="achievement-card__prize-icon">💰</span>
+                <span>Cash Prize — ₹1,000</span>
+              </div>
+            </div>
+            <div class="achievement-card__glow"></div>
+          </div>
+
+          <div class="achievements__extras">
+            <div class="glass-card achievement-mini reveal" data-tilt>
+              <span class="achievement-mini__icon">🎯</span>
+              <div>
+                <h4>Ideathon Participant</h4>
+                <p>Participated in Ideathon events showcasing innovative AI solutions.</p>
+              </div>
+            </div>
+            <div class="glass-card achievement-mini reveal" data-tilt>
+              <span class="achievement-mini__icon">⚡</span>
+              <div>
+                <h4>Technical Symposium</h4>
+                <p>Active participant in technical symposium events and competitions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Let's Build<br><span class="gradient-text">Something Great</span></h2>
+          <p class="section__subtitle">Open to internships, collaborations, and exciting opportunities.</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- EDIT: Update contact details here -->
+          <a href="tel:+918838213528" class="glass-card contact-card reveal" data-tilt>
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Phone</span>
+              <p>+91 8838213528</p>
+            </div>
+          </a>
+
+          <a href="mailto:tamilaruvi485@gmail.com" class="glass-card contact-card reveal" data-tilt>
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Email</span>
+              <p>tamilaruvi485@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/tamilaruvi-s-85baa0306" target="_blank" rel="noopener" class="glass-card contact-card reveal" data-tilt>
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card__label">LinkedIn</span>
+              <p>tamilaruvi-s-85baa0306</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/tamilaruvi485-source" target="_blank" rel="noopener" class="glass-card contact-card reveal" data-tilt>
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card__label">GitHub</span>
+              <p>tamilaruvi485-source</p>
+            </div>
+          </a>
+
+          <a href="assets/resume.png" download="Tamilaruvi_S_Resume.png" class="glass-card contact-card contact-card--resume reveal" data-tilt>
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <span class="contact-card__label">Resume</span>
+              <p>Download PDF</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed &amp; Developed by <span class="footer__name">Tamilaruvi S</span></p>
+      <p class="footer__year">&copy; 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
